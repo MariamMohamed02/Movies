@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar min-vh-100 position-fixed d-flex ">
+        <div class="nav-tab d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li class="py-2 position-relative">Now Playing</li>
+                    <li class="py-2 position-relative">Popular</li>
+                    <li class="py-2 position-relative">Top Rated</li>
+                    <li class="py-2 position-relative">Trending</li>
+                    <li class="py-2 position-relative">Upcoming</li>
+                    <li class="py-2 position-relative">Contact Us</li>
+                </ul>
+                
+            </div>
+
+            <div class="nav-footer">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="footer">
+                    <p>Copyright © 2022 All Rights <br>
+                        Reserved.</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="nav-header min-vh-100 d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+            <img class="logo" src="images/logo.png" alt="logo">
+            <i class="openNavbarIcon fa-solid fa-x fa-2x"></i>
+            <div>
+                <i class="fa-solid fa-globe d-block "></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEARCH BAR -->
+    <div class="container py-5">
+        <input id="search" type="search" placeholder="Search" class="form-control w-50 mx-auto bg-transparent rounded-pill text-white shadow-none border-white px-3">
+            <div class="row g-4 mt-3 text-white"></div>
+            <div id="search-results"></div>
+    </div>
+
+    <!-- CONTACT US -->
+    <section id="contact" class="contact container text-white py-5">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <input type="text" required id="name" maxlength="37" class="form-control mt-4" placeholder="Enter Your Name">
+                    <span Class="error" class="animate__animated"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" required id="email"  class="form-control mt-4" placeholder="Enter Your Email">
+                    <span Class="error" class="animate__animated"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="number"required id="phone" class="form-control mt-4" placeholder="Enter Your Phone">
+                    <span Class="error" class="animate__animated"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="number"required id="age"  class="form-control mt-4" placeholder="Enter Your Age">
+                    <span Class="error" class="animate__animated"></span>
+                </div>
+                <div class="col-md-6 position-relative">
+                    <input type="password" required id="password" class="form-control mt-4" placeholder="Enter Your Password">
+                    <span Class="error" class="animate__animated"></span>
+                    <span class="showPass"><i data-show="show" class="fa-solid fa-eye-slash"></i></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="password"required id="repassword" class="form-control mt-4" placeholder="ReEnter Password">
+                    <span Class="error" class="animate__animated"></span>
+                </div>
+                <div class="col-md-12  mt-4">
+                    <button type="submit" class="form-btn rounded-2 mb-3 animate__animated">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
